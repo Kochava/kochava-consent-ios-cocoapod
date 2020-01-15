@@ -1,0 +1,1 @@
+../../../../../KochavaConsentiOS/Classes/KVAConsentConfiguration.h

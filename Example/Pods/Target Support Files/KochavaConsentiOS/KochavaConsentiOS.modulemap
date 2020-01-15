@@ -1,0 +1,6 @@
+framework module KochavaConsentiOS {
+  umbrella header "KochavaConsentiOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

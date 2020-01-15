@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'KochavaConsentiOS'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of KochavaConsentiOS.'
+  s.summary          = 'The KochavaConsent module of the Kochava iOS SDK.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,15 +17,15 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+  s.description  = <<-DESC
+  The KochavaConsent module provides consent management.  This includes support for GDPR, CCPA, and other consumer privacy laws.
+  DESC
 
-  s.homepage         = 'https://github.com/johnbushnell/KochavaConsentiOS'
+  s.homepage         = 'http://www.kochava.com'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'johnbushnell' => 'jbushnell@kochava.com' }
-  s.source           = { :git => 'https://github.com/johnbushnell/KochavaConsentiOS.git', :tag => s.version.to_s }
+  s.license          = { :type => 'Commercial', :file => 'LICENSE' }
+  s.author       = { 'Kochava' => 'support@kochava.com' }
+  s.source           = { :git => 'https://github.com/Kochava/kochava-consent-ios-cocoapod.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
@@ -36,7 +36,14 @@ TODO: Add long description of the pod here.
   #   'KochavaConsentiOS' => ['KochavaConsentiOS/Assets/*.png']
   # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+  s.public_header_files = 'KochavaConsentiOS/Classes/**/*.h'
+  s.frameworks   = 'Foundation', 'UIKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+
+  s.platform     = :ios, '8.0'
+  s.vendored_library = 'KochavaConsentiOS/Libraries/libKochavaConsentiOS.a'
+  s.preserve_path = 'KochavaConsentiOS/Libraries/libKochavaConsentiOS.a'
+  s.library = 'KochavaConsentiOS'
+
+  s.dependency 'KochavaTrackeriOS', '3.12.0'
 end

@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  KochavaConsentiOS
 //
-//  Created by johnbushnell on 01/15/2020.
-//  Copyright (c) 2020 johnbushnell. All rights reserved.
+//  Created by John Bushnell on 01/15/2020.
+//  Copyright (c) 2020 Kochava. All rights reserved.
 //
 
 import UIKit

@@ -1,0 +1,23 @@
+PODS:
+  - KochavaConsentiOS (0.1.0):
+    - KochavaTrackeriOS (= 3.12.0)
+  - KochavaTrackeriOS (3.12.0)
+
+DEPENDENCIES:
+  - KochavaConsentiOS (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - KochavaTrackeriOS
+
+EXTERNAL SOURCES:
+  KochavaConsentiOS:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  KochavaConsentiOS: 4ee8925bb096ef97d1c3bcb64da67f0c70af25e5
+  KochavaTrackeriOS: 37594709b92d9bd204db97e1658d7be6c1c32984
+
+PODFILE CHECKSUM: 5a64d4121668b4e8757e6666aaff42a598022ad7
+
+COCOAPODS: 1.8.4

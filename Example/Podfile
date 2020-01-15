@@ -1,11 +1,9 @@
 use_frameworks!
 
+platform :ios, '8.0'
+
 target 'KochavaConsentiOS_Example' do
+  # pod 'KochavaTrackeriOS', '3.12.0'
   pod 'KochavaConsentiOS', :path => '../'
 
-  target 'KochavaConsentiOS_Tests' do
-    inherit! :search_paths
-
-    
-  end
 end
