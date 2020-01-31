@@ -73,7 +73,7 @@
  
  @author Kochava, Inc.
  
- @copyright 2013 - 2020 Kochava, Inc.
+ @copyright 2020 Kochava, Inc.
  */
 @interface KVAConsentClient : NSObject
 
