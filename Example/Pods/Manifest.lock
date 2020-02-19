@@ -1,7 +1,7 @@
 PODS:
-  - KochavaConsentiOS (3.13.0):
-    - KochavaTrackeriOS (= 3.13.0)
-  - KochavaTrackeriOS (3.13.0)
+  - KochavaConsentiOS (3.14.0):
+    - KochavaTrackeriOS (= 3.14.0)
+  - KochavaTrackeriOS (3.14.0)
 
 DEPENDENCIES:
   - KochavaConsentiOS (from `../`)
@@ -15,8 +15,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  KochavaConsentiOS: b78d131e357f5575eba805ff06fb194f9d33dc05
-  KochavaTrackeriOS: 4608415ead263c4a80dce6bd8306a7ae8ce9cfc7
+  KochavaConsentiOS: 7018c1076410c98e393bf7c6e7634e9bcf8c4092
+  KochavaTrackeriOS: c768fdf3e3afd4d99909ce34685c5bd40e192e89
 
 PODFILE CHECKSUM: 5a64d4121668b4e8757e6666aaff42a598022ad7
 

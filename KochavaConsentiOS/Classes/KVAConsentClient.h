@@ -87,11 +87,14 @@
 
 
 
+@class KVAUSPrivacyStringValue;
+
+
+
 #if TARGET_OS_TV
 @protocol KVAConsentClientGeneralJSExport <JSExport>
 @property (class, readonly, strong, nonnull) KVAConsentClient *shared;
 @property (readonly) BOOL startedBool;
-@property (strong, nullable, readwrite) NSString *usPrivacyString;
 - (void)registerIdentityWithNameString:(nonnull NSString *)nameString valueString:(nonnull NSString *)valueString NS_SWIFT_NAME(registerIdentity(withNameString:valueString:));
 - (void)unregisterIdentityWithNameString:(nonnull NSString *)nameString NS_SWIFT_NAME(unregisterIdentity(withNameString:));
 - (void)start;
@@ -126,15 +129,6 @@
 @brief A boolean indicating if the instance has been started.
 */
 @property (readonly) BOOL startedBool;
-
-
-
-/*!
-@property usPrivacyString
-
-@brief The IAB US Privacy string.
-*/
-@property (strong, nullable, readwrite) NSString *usPrivacyString;
 
 
 
@@ -249,6 +243,70 @@ typedef void (^ KVAConsentConfigurationDidReceiveBlock) (KVAConsentConfiguration
 @discussion This can be used to prompt the user for consent and to enable and/or disable functionality.
  */
 @property (strong, nonatomic, nullable, readwrite) KVAConsentConfigurationDidReceiveBlock didReceiveConfigurationBlock;
+
+
+
+@end
+
+
+
+#pragma mark - feature USPrivacy
+
+
+
+@class KVAUSPrivacyStringValue;
+
+
+
+#if TARGET_OS_TV
+@protocol KVAConsentClientUSPrivacyJSExport <JSExport>
+@property (strong, nullable, readwrite) NSString *usPrivacyString;
+@end
+#endif
+
+
+
+#if TARGET_OS_TV
+@interface KVAConsentClient (USPrivacy_Public) <KVAConsentClientUSPrivacyJSExport>
+#else
+@interface KVAConsentClient (USPrivacy_Public)
+#endif
+
+
+
+/*!
+@property uspExplicitNoticeGiven
+ 
+ @brief An enumerated instance of KVAUSPrivacyStringValue indicating if explicit notice has been given.
+ */
+@property (strong, nonnull, readwrite) KVAUSPrivacyStringValue *uspExplicitNoticeGiven;
+
+
+
+/*!
+@property uspUserOptedOutOfSale
+ 
+ @brief An enumerated instance of KVAUSPrivacyStringValue indicating if the user has opted out of the sale of their data.
+ */
+@property (strong, nonnull, readwrite) KVAUSPrivacyStringValue *uspUserOptedOutOfSale;
+
+
+
+/*!
+@property uspCoveredByLSPA
+ 
+ @brief An enumerated instance of KVAUSPrivacyStringValue indicating if the publisher intends for this transaction to be covered under the IAB Limited Service Provider Agreement (LSPA).
+ */
+@property (strong, nonnull, readwrite) KVAUSPrivacyStringValue *uspCoveredByLSPA;
+
+
+
+/*!
+@property usPrivacyString
+
+@brief The IAB US Privacy string.
+*/
+@property (strong, nullable, readwrite) NSString *usPrivacyString;
 
 
 
