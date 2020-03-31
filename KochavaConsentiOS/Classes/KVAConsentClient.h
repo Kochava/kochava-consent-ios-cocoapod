@@ -179,8 +179,6 @@
  @brief Invalidates an instance of class KVAConsentClient.
  
  @discussion This is similar to allowing an instance of the consentClient deallocate, but it can also be used on the shared instance.  It will additionally signal certain sub-systems to invalidate themselves, which can result in a more assured and immediate halt.  The scope of this invalidation is not absolute.  Certain sub-systems will continue to run for a period of time until they may gracefully complete.  When using this method with the shared instance, you are guaranteed to be re-defaulted a new instance the next time it is referenced, and you may immediately move forward to re-configure it.
- 
- When you are not using Intelligent Consent Management, this method can be used to signal that the consentClient may no longer run following consent having been denied.  When used this way, you may re-configure a consentClient if/when consent is granted.
  */
 - (void)invalidate;
 

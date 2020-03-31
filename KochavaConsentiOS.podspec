@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'KochavaConsentiOS'
-  s.version          = '3.14.1'
+  s.version          = '3.15.0'
   s.summary          = 'The KochavaConsent module of the Kochava iOS SDK.'
 
 # This description is used to generate tags and improve search results.
@@ -45,5 +45,5 @@ Pod::Spec.new do |s|
   s.preserve_path = 'KochavaConsentiOS/Libraries/libKochavaConsentiOS.a'
   s.library = 'KochavaConsentiOS'
 
-  s.dependency 'KochavaTrackeriOS', '3.14.1'
+  s.dependency 'KochavaTrackeriOS', '3.15.0'
 end

@@ -55,28 +55,6 @@
 
 
 
-#pragma mark - PROPERTIES
-
-
-
-/*!
- @property textString
- 
- @brief The string of text.
- */
-@property (strong, nonatomic, nullable, readonly) NSString *textString;
-
-
-
-/*!
- @property internalBool
- 
- @brief The date that the token was provided by the operating system.
- */
-@property (readonly) BOOL internalBool;
-
-
-
 #pragma mark - CLASS GENERAL
 
 
