@@ -22,26 +22,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate
 
 
     
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool
     {
         KVALog.shared.level = .info
         
-        print("KVACoreProduct.shared.standardVersionInfoString = \(KVACoreProduct.shared.standardVersionInfoString)")
-        print("KVAConsentProduct.shared.standardVersionInfoString = \(KVAConsentProduct.shared.standardVersionInfoString)")
-                
-        // KochavaTracker
-        // ⓘ Configure.
-        KochavaTracker.shared.configure(
-            withParametersDictionary: [kKVAParamAppGUIDStringKey: "_YOUR_APP_GUID_"],
-            delegate: nil
-        )
+        print("KVACoreProduct.shared = \(KVACoreProduct.shared.kva_asForContextObject(withContext: .log)!)")
+        print("KVAConsentProduct.shared = \(KVAConsentProduct.shared.kva_asForContextObject(withContext: .log)!)")
 
         // KVAConsentClient
-        // 1. Register the Kochava deviceIdString as an identity.
+        // 1. Register the Kochava deviceIdString as an identity.  Note that this is mock information.
         // 2. Start, now that we’ve registered at least one identity.
         KVAConsentClient.shared.registerIdentity(
-            withNameString: "kochava_device_id",
-            valueString: KochavaTracker.shared.deviceIdString()!
+            withNameString: "user_id",
+            valueString: "1567345"
         )
 
         KVAConsentClient.shared.start()

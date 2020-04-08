@@ -111,8 +111,8 @@
 			isa = PBXGroup;
 			children = (
 				13B2754B9CF921C1E80B44F4 /* KochavaConsentiOS.podspec */,
-				E94C1EF594905F40D4C9EA35 /* README.md */,
 				66D2849918670F21D004C261 /* LICENSE */,
+				E94C1EF594905F40D4C9EA35 /* README.md */,
 			);
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
@@ -303,6 +303,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -351,6 +352,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
