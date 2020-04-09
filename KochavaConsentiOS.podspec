@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'KochavaConsentiOS'
-  s.version          = '3.16.0'
+  s.version          = '3.16.0.1'
   s.summary          = 'The KochavaConsent module of the Kochava iOS SDK.'
 
 # This description is used to generate tags and improve search results.

@@ -1,5 +1,5 @@
 PODS:
-  - KochavaConsentiOS (3.16.0):
+  - KochavaConsentiOS (3.16.0.1):
     - KochavaCoreiOS (~> 3.16)
   - KochavaCoreiOS (3.16.0)
 
@@ -15,7 +15,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  KochavaConsentiOS: c1c4941e91271985f2345cde06d0ab0b24670156
+  KochavaConsentiOS: 2319a96e0c6c2483eb28100673f89a83121548cf
   KochavaCoreiOS: f4a62a4971f063603b0a29ca564a1e003784f995
 
 PODFILE CHECKSUM: 5a64d4121668b4e8757e6666aaff42a598022ad7
