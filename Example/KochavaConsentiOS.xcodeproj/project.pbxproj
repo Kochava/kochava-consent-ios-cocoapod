@@ -136,7 +136,7 @@
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				F9D90E893BDB3662C02F0E2C /* [CP] Copy Pods Resources */,
+				2F92749511E4A0878E5ED482 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -217,18 +217,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F9D90E893BDB3662C02F0E2C /* [CP] Copy Pods Resources */ = {
+		2F92749511E4A0878E5ED482 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-KochavaConsentiOS_Example/Pods-KochavaConsentiOS_Example-resources.sh",
-				"${PODS_CONFIGURATION_BUILD_DIR}/KochavaConsentiOS/KochavaConsentiOS.bundle",
+				"${PODS_ROOT}/../../KochavaConsentiOS/Assets/KVABoolAdapterTableViewCell.xib",
+				"${PODS_ROOT}/../../KochavaConsentiOS/Assets/KVAConsentDialogViewController.xib",
+				"${PODS_ROOT}/../../KochavaConsentiOS/Assets/KVAImageTableViewCell.xib",
+				"${PODS_ROOT}/../../KochavaConsentiOS/Assets/KVATextTableViewCell.xib",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/KochavaConsentiOS.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/KVABoolAdapterTableViewCell.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/KVAConsentDialogViewController.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/KVAImageTableViewCell.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/KVATextTableViewCell.nib",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

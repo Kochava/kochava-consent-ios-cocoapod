@@ -32,9 +32,10 @@ Pod::Spec.new do |s|
 
   s.source_files = 'KochavaConsentiOS/Classes/**/*'
   
-  s.resource_bundles = {
-     'KochavaConsentiOS' => ['KochavaConsentiOS/Assets/*.xib']
-  }
+  s.resources = ['KochavaConsentiOS/Assets/**/*.{xib}']
+#  s.resource_bundles = {
+#     'KochavaConsentiOS' => ['KochavaConsentiOS/Assets/*.xib']
+#  }
 
   s.public_header_files = 'KochavaConsentiOS/Classes/**/*.h'
   s.frameworks   = 'Foundation', 'UIKit'

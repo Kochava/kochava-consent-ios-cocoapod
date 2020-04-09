@@ -19,11 +19,9 @@
     "ios": "8.0"
   },
   "source_files": "KochavaConsentiOS/Classes/**/*",
-  "resource_bundles": {
-    "KochavaConsentiOS": [
-      "KochavaConsentiOS/Assets/*.xib"
-    ]
-  },
+  "resources": [
+    "KochavaConsentiOS/Assets/**/*.{xib}"
+  ],
   "public_header_files": "KochavaConsentiOS/Classes/**/*.h",
   "frameworks": [
     "Foundation",
