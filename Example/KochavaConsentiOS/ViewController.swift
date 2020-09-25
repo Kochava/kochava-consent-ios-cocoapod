@@ -17,7 +17,7 @@ class ViewController: UIViewController
     {
         // KVAConsentClient
         // ⓘ Configure to appear like you're in a CCPA mode even if you're not really, just to consistently show the dialog.
-        KVAConsentClient.shared.configure(with: [
+        KVAConsentClient.shared.kva_configure(with: [
             "modes":
             [
                 "ccpa",
@@ -66,7 +66,7 @@ class ViewController: UIViewController
             return
         }
 
-        print("!!!! will show")
+        print("ViewController will show")
         self.show(consentDialogNavigationController, sender: self)
     }
     

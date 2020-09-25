@@ -22,19 +22,7 @@
 #endif
 
 #ifdef KOCHAVA_FRAMEWORK
-#if TARGET_OS_TV
-#if TARGET_OS_SIMULATOR
-#import <KochavaCoreTVOSSimulator/KochavaCoreTVOSSimulator.h>
-#else
-#import <KochavaCoreTVOSDevice/KochavaCoreTVOSDevice.h>
-#endif
-#else
-#if TARGET_OS_SIMULATOR
-#import <KochavaCoreiOSSimulator/KochavaCoreiOSSimulator.h>
-#else
-#import <KochavaCoreiOSDevice/KochavaCoreiOSDevice.h>
-#endif
-#endif
+#import <KochavaCore/KochavaCore.h>
 #else
 #import "KVAAsForContextObjectProtocol.h"
 #import "KVAConfigureWithObjectProtocol.h"
@@ -84,10 +72,6 @@
 
 
 #pragma mark - feature General
-
-
-
-@class KVAUSPrivacyStringValue;
 
 
 
@@ -252,13 +236,13 @@ typedef void (^ KVAConsentConfigurationDidReceiveBlock) (KVAConsentConfiguration
 
 
 
-@class KVAUSPrivacyStringValue;
+@class KVAUSPrivacy;
 
 
 
 #if TARGET_OS_TV
 @protocol KVAConsentClientUSPrivacyJSExport <JSExport>
-@property (strong, nullable, readwrite) NSString *usPrivacyString;
+@property (strong, nonatomic, nonnull, readonly) KVAUSPrivacy *usPrivacy;
 @end
 #endif
 
@@ -273,38 +257,11 @@ typedef void (^ KVAConsentConfigurationDidReceiveBlock) (KVAConsentConfiguration
 
 
 /*!
-@property uspExplicitNoticeGiven
- 
- @brief An enumerated instance of KVAUSPrivacyStringValue indicating if explicit notice has been given.
- */
-@property (strong, nonnull, readwrite) KVAUSPrivacyStringValue *uspExplicitNoticeGiven;
+@property usPrivacy
 
-
-
-/*!
-@property uspUserOptedOutOfSale
- 
- @brief An enumerated instance of KVAUSPrivacyStringValue indicating if the user has opted out of the sale of their data.
- */
-@property (strong, nonnull, readwrite) KVAUSPrivacyStringValue *uspUserOptedOutOfSale;
-
-
-
-/*!
-@property uspCoveredByLSPA
- 
- @brief An enumerated instance of KVAUSPrivacyStringValue indicating if the publisher intends for this transaction to be covered under the IAB Limited Service Provider Agreement (LSPA).
- */
-@property (strong, nonnull, readwrite) KVAUSPrivacyStringValue *uspCoveredByLSPA;
-
-
-
-/*!
-@property usPrivacyString
-
-@brief The IAB US Privacy string.
+@brief An instance of class KVAUSPrivacy providing an interface and support for the IAB US Privacy standard.
 */
-@property (strong, nullable, readwrite) NSString *usPrivacyString;
+@property (strong, nonatomic, nonnull, readonly) KVAUSPrivacy *usPrivacy;
 
 
 

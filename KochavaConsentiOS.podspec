@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'KochavaConsentiOS'
-  s.version          = '3.17.0'
+  s.version          = '4.0.0'
   s.summary          = 'The KochavaConsent module of the Kochava iOS SDK.'
 
 # This description is used to generate tags and improve search results.
@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/Kochava/kochava-consent-ios-cocoapod.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '10.3'
 
   s.source_files = 'KochavaConsentiOS/Classes/**/*'
   
@@ -39,9 +39,9 @@ Pod::Spec.new do |s|
 
   s.public_header_files = 'KochavaConsentiOS/Classes/**/*.h'
   s.frameworks   = 'Foundation', 'UIKit'
-  s.dependency 'KochavaCoreiOS', '~> 3.16'
+  s.dependency 'KochavaUIiOS', '~> 4.0.0'
 
-  s.platform     = :ios, '8.0'
+  s.platform     = :ios, '10.3'
   s.vendored_library = 'KochavaConsentiOS/Libraries/libKochavaConsentiOS.a'
   s.preserve_path = 'KochavaConsentiOS/Libraries/libKochavaConsentiOS.a'
   s.library = 'KochavaConsentiOS'

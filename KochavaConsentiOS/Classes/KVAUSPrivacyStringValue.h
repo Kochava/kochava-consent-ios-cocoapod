@@ -18,21 +18,36 @@
 
 
 #ifdef KOCHAVA_FRAMEWORK
+#import <KochavaCore/KochavaCore.h>
+#else
 #if TARGET_OS_TV
-#if TARGET_OS_SIMULATOR
-#import <KochavaCoreTVOSSimulator/KochavaCoreTVOSSimulator.h>
-#else
-#import <KochavaCoreTVOSDevice/KochavaCoreTVOSDevice.h>
+#import <JavaScriptCore/JavaScriptCore.h>
 #endif
-#else
-#if TARGET_OS_SIMULATOR
-#import <KochavaCoreiOSSimulator/KochavaCoreiOSSimulator.h>
-#else
-#import <KochavaCoreiOSDevice/KochavaCoreiOSDevice.h>
-#endif
-#endif
-#else
 #import "KVAFromObjectProtocol.h"
+#endif
+
+
+
+#pragma mark - CLASS
+
+
+
+@class KVAUSPrivacyStringValue;
+
+
+
+#pragma mark - PROTOCOL
+
+
+
+#if TARGET_OS_TV
+@protocol KVAUSPrivacyStringValueJSExport <JSExport>
+@property (class, strong, nonatomic, nonnull, readonly) KVAUSPrivacyStringValue *yes;
+@property (class, strong, nonatomic, nonnull, readonly) KVAUSPrivacyStringValue *no;
+@property (class, strong, nonatomic, nonnull, readonly) KVAUSPrivacyStringValue *notApplicable;
+@property (strong, nonatomic, nonnull, readonly) NSString *nameString;
+@property (strong, nonatomic, nonnull, readonly) NSString *rawString;
+@end
 #endif
 
 
@@ -41,11 +56,17 @@
 
 
 
-@interface KVAUSPrivacyStringValue : NSObject <KVAFromObjectProtocol>
+@interface KVAUSPrivacyStringValue : NSObject
+<
+#if TARGET_OS_TV
+KVAUSPrivacyStringValueJSExport,
+#endif
+KVAFromObjectProtocol
+>
 
 
 
-#pragma mark - CLASS PROPERTIES
+#pragma mark - ENUMERATED VALUES
 
 
 

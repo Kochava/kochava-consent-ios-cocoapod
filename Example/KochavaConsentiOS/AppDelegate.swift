@@ -27,7 +27,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate
         KVALog.shared.level = .info
         
         print("KVACoreProduct.shared = \(KVACoreProduct.shared.kva_asForContextObject(withContext: .log)!)")
-        print("KVAConsentProduct.shared = \(KVAConsentProduct.shared.kva_asForContextObject(withContext: .log)!)")
+
+        KVAConsentProduct.shared.register()
 
         // KVAConsentClient
         // 1. Register the Kochava deviceIdString as an identity.  Note that this is mock information.

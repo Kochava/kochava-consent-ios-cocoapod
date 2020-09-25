@@ -18,19 +18,7 @@
 
 
 #ifdef KOCHAVA_FRAMEWORK
-#if TARGET_OS_TV
-#if TARGET_OS_SIMULATOR
-#import <KochavaCoreTVOSSimulator/KochavaCoreTVOSSimulator.h>
-#else
-#import <KochavaCoreTVOSDevice/KochavaCoreTVOSDevice.h>
-#endif
-#else
-#if TARGET_OS_SIMULATOR
-#import <KochavaCoreiOSSimulator/KochavaCoreiOSSimulator.h>
-#else
-#import <KochavaCoreiOSDevice/KochavaCoreiOSDevice.h>
-#endif
-#endif
+#import <KochavaCore/KochavaCore.h>
 #else
 #import "KVAProduct.h"
 #import "KVASharedPropertyProvider.h"
@@ -45,7 +33,7 @@
 /*!
  @class KVAConsentProduct
  
- @brief A class which defines a consentClient product.
+ @brief A class which defines a consent product.
  
  @discussion A product in this context generally refers to the result of a build.
  
@@ -59,8 +47,7 @@
 
 
 
-#pragma mark - CLASS PROPERTIES
-#pragma mark KVAConsentProduct.shared (Singleton Shared Instance)
+#pragma mark - SHARED INSTANCE (SINGLETON)
 
 
 
