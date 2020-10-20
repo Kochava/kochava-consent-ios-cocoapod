@@ -25,6 +25,8 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 * [KochavaCore](https://cocoapods.org/pods/KochavaCoreiOS)
 [![Version](https://img.shields.io/cocoapods/v/KochavaCoreiOS.svg?style=flat)](https://cocoapods.org/pods/KochavaCoreiOS) [ ![Download](https://api.bintray.com/packages/kochava/apple/core/images/download.svg) ](https://bintray.com/kochava/apple/core/_latestVersion)
+* [KochavaUI](https://cocoapods.org/pods/KochavaUIiOS)
+[![Version](https://img.shields.io/cocoapods/v/KochavaUIiOS.svg?style=flat)](https://cocoapods.org/pods/KochavaUIiOS) [ ![Download](https://api.bintray.com/packages/kochava/apple/ui/images/download.svg) ](https://bintray.com/kochava/apple/ui/_latestVersion)
 
 ## Installation
 
