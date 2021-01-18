@@ -3,7 +3,7 @@
 //  KochavaUI
 //
 //  Created by John Bushnell on 9/21/20.
-//  Copyright © 2020 Kochava, Inc.  All rights reserved.
+//  Copyright © 2020 - 2021 Kochava, Inc.  All rights reserved.
 //
 
 
