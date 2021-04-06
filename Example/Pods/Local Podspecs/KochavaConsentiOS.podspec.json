@@ -1,6 +1,6 @@
 {
   "name": "KochavaConsentiOS",
-  "version": "4.4.0",
+  "version": "4.5.0",
   "summary": "The KochavaConsent module of the Kochava iOS SDK.",
   "description": "The KochavaConsent module provides consent management.  This includes support for GDPR, CCPA, and other consumer privacy laws.",
   "homepage": "http://www.kochava.com",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/Kochava/kochava-consent-ios-cocoapod.git",
-    "tag": "4.4.0"
+    "tag": "4.5.0"
   },
   "platforms": {
     "ios": "10.3"
@@ -29,7 +29,7 @@
   ],
   "dependencies": {
     "KochavaUIiOS": [
-      "~> 4.4.0"
+      "~> 4.5.0"
     ]
   },
   "vendored_libraries": "KochavaConsentiOS/Libraries/libKochavaConsentiOS.a",
