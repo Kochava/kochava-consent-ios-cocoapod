@@ -1,7 +1,7 @@
 # KochavaConsentiOS
 
 [![Version](https://img.shields.io/cocoapods/v/KochavaConsentiOS.svg?style=flat)](https://cocoapods.org/pods/KochavaConsentiOS)
-[![Download](https://api.bintray.com/packages/kochava/apple/consent/images/download.svg)](https://bintray.com/kochava/apple/consent/_latestVersion)
+[![Releases](https://img.shields.io/github/v/release/kochava/Apple-SwiftPackage-KochavaConsent?include_prereleases&sort=semver)](https://github.com/Kochava/Apple-SwiftPackage-KochavaConsent/releases)
 [![License](https://img.shields.io/cocoapods/l/KochavaConsentiOS.svg?style=flat)](https://cocoapods.org/pods/KochavaConsentiOS)
 [![Platform](https://img.shields.io/cocoapods/p/KochavaConsentiOS.svg?style=flat)](https://cocoapods.org/pods/KochavaConsentiOS)
 
@@ -28,9 +28,9 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 ## Dependencies
 
 * [KochavaCore](https://cocoapods.org/pods/KochavaCoreiOS)
-[![Version](https://img.shields.io/cocoapods/v/KochavaCoreiOS.svg?style=flat)](https://cocoapods.org/pods/KochavaCoreiOS) [ ![Download](https://api.bintray.com/packages/kochava/apple/core/images/download.svg) ](https://bintray.com/kochava/apple/core/_latestVersion)
+[![Version](https://img.shields.io/cocoapods/v/KochavaCoreiOS.svg?style=flat)](https://cocoapods.org/pods/KochavaCoreiOS) [![Download](https://img.shields.io/github/v/release/kochava/Apple-SwiftPackage-KochavaCore?include_prereleases&sort=semver)](https://github.com/Kochava/Apple-SwiftPackage-KochavaCore/releases)
 * [KochavaUI](https://cocoapods.org/pods/KochavaUIiOS)
-[![Version](https://img.shields.io/cocoapods/v/KochavaUIiOS.svg?style=flat)](https://cocoapods.org/pods/KochavaUIiOS) [ ![Download](https://api.bintray.com/packages/kochava/apple/ui/images/download.svg) ](https://bintray.com/kochava/apple/ui/_latestVersion)
+[![Version](https://img.shields.io/cocoapods/v/KochavaUIiOS.svg?style=flat)](https://cocoapods.org/pods/KochavaUIiOS) [![Download](https://img.shields.io/github/v/release/kochava/Apple-SwiftPackage-KochavaUI?include_prereleases&sort=semver)](https://github.com/Kochava/Apple-SwiftPackage-KochavaUI/releases)
 
 ## Installation
 
