@@ -13,9 +13,13 @@
 
 
 
+#pragma mark KochavaCore
 #import "KochavaCore.h"
+
+#pragma mark KochavaUI
 #import "KochavaUI.h"
 
+#pragma mark KochavaConsent
 #import "KVAConsentAuditEntry.h"
 #import "KVAConsentClient.h"
 #import "KVAConsentConfiguration.h"
