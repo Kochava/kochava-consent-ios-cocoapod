@@ -13,10 +13,6 @@ The KochavaUI module of the Kochava Apple SDK provides user interface support.
 
 The Kochava SDK is a lightweight and easy to integrate SDK written in Objective-C, providing first-class integration with Kochava’s industry leading mobile attribution and analytics platform.
 
-## Example
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
 ## Built on
 
 * Xcode 12.4
@@ -39,6 +35,10 @@ To install it, simply add the following line to your Podfile:
 pod 'KochavaUIiOS'
 ```
 
+## Example
+
+To run the example project, clone the repo, and run `pod install` from the Example directory first.
+
 ## Author
 
 Kochava, support@kochava.com
@@ -46,3 +46,17 @@ Kochava, support@kochava.com
 ## License
 
 KochavaUIiOS is available under the [Kochava Terms of Service](https://www.kochava.com/terms-of-service/). See the LICENSE file for more info.
+
+
+## Default Branch
+
+As of October 1, 2020, github.com uses the branch name ‘main’ when creating the initial default branch for all new repositories.  In order to minimize any customizations in our github usage and to support consistent naming conventions, we have made the decision to rename the ‘master’ branch to be called ‘main’ in all Kochava’s github repos.
+
+For local copies of the repo, the following steps will update to the new default branch:
+
+```
+git branch -m master main
+git fetch origin
+git branch -u origin/main main
+git remote set-head origin -a
+```
