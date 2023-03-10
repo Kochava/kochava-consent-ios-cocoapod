@@ -7,6 +7,10 @@
 
 <img src="https://storage.googleapis.com/kochava-web/2016/07/Kochava-horizontal-black-800x154.png" width="260" />
 
+## Deprecation Notice
+
+This module was deprecated on March 9th, 2023.  Please contact support@kochava.com if you have any questions.
+
 ## KochavaConsent iOS Module
 
 The KochavaConsent module of the Kochava Apple SDK provides consent management. This includes support for CCPA.
